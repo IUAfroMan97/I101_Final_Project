@@ -13,9 +13,25 @@
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Header-Dark.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- JS Functions -->
+    <script>
+      function click1() {
+        var a = document.getElementById("one");
+        a.style.fontSize = "50px";
+        a.style.color = "black";
+        a.innerHTML = "Here is our presentation!"
+      }
+
+      function click2() {
+        var b = document.getElementById("two");
+        b.hidden = false;
+      }
+    </script>
 </head>
 
-<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <span style="color:rgb(0,0,0);font-size:22px;">Group 5</span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,7 +57,14 @@
     </ul>
   </div>
 </nav>
-    <div><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRAb673SxVkqcnE-e4Y7QcVYL9yzuCLMgBXeC1vAM2GyjylvLNM2zcAUZYchiaudtsvNr2QhVTUE_2D/embed?start=true&loop=true&delayms=5000" frameborder="0" width="992" height="569" padding-left="150px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div><img src="assets/img/IMG_3159.jpg" style="width:992px;background-position:center;background-size:cover;">
+<div class="container">
+  <label id="one"></label>
+  <button onClick="click1()">Click me!</button>
+</div>
+    <div>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRAb673SxVkqcnE-e4Y7QcVYL9yzuCLMgBXeC1vAM2GyjylvLNM2zcAUZYchiaudtsvNr2QhVTUE_2D/embed?start=true&loop=true&delayms=5000" frameborder="0" width="992" height="569" padding-left="150px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+      <button onclick="click2()">Click to view group photo!</button>
+      <img src="assets/img/IMG_3159.jpg" hidden=true id="two" style="width:992px;background-position:center;background-size:cover;">
     <div class="footer-clean" style="background-color:rgba(238,238,238,0.32);">
         <footer>
             <div class="container">
